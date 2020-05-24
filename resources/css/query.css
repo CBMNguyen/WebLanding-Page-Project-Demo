@@ -1,0 +1,172 @@
+@media only screen and (max-width: 1200px){
+    html{
+        font-size: 16px;
+    }
+
+    .heading-main-box{
+        transform: translate(-30%,-50%);
+    }
+
+    .product-section .btn{
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .logo{
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    .main-nav{
+        margin-top: 40px;
+    }
+
+    .main-nav li{
+        margin-right: 20px;
+    }
+
+    .heading-main-box{
+        transform: translate(-20%,-50%);
+    }
+
+    .p-title{
+        font-size: 12px;
+    }
+
+    .product-section h3{
+        font-size: 14px;
+    }
+
+    .product-box{
+        width: 95%;
+    }
+    
+    .product-box ul li{
+        margin-left: 15%;
+    }
+
+    .product-box .btn{
+        margin-left: 15%;
+        width: 150px;
+    }
+
+    input, textarea{
+        margin-left:15%;
+    }
+
+    input[type=text], input[type=email], textarea {
+        width: 85%;
+        font-size: 95%;
+    }
+
+    .social-icon li {
+        margin-left: 15px;
+    }
+
+    form{
+        width: 80%;
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .main-nav{
+        display: none;
+    }
+
+    .logo{
+        width: 350px;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .heading-main-box h1{
+        font-size: 250%;
+    }
+
+    .heading-main-box{
+        transform: translate(-17% ,-50%);
+    }
+
+    .col{
+        width: 100%;
+    }
+
+    .about-picture img {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .product-box ul li{
+        margin-left: 25%;
+    }
+
+    .product-box .btn{
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .p-title{
+        font-size: 20px;
+    }
+
+    .product-box {
+      width: 70%;
+      margin-left: 15%;
+    }
+    .col{
+        margin-bottom: 40px;
+    }
+
+    figcaption{
+        visibility: hidden;
+    }
+
+    .information li{
+        font-size: 16px;
+    }
+
+    .social-icon{
+        margin-left: 30%;
+    }
+
+    .information{
+        margin-left: 30%;
+        margin-top: 30px;
+    }
+
+    form{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+
+    label{
+        margin-left: 40%;
+    }
+
+    input,textarea{
+        margin-left: 10%;
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (max-width: 570px){
+    .mobile{
+        right: 45px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .mobile{
+        top: 100px;
+    }
+
+    .sticky .logo{
+        width: 200px;
+        margin-top: -25px;
+    }
+}
