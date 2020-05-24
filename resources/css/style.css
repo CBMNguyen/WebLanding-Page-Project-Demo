@@ -1,0 +1,487 @@
+
+/* ------------------------------------------------------------- */
+/* ---------------------------Default----------------------------- */
+/* ------------------------------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    color: #5a5a5a;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    background-color: #ffffff;
+}
+
+section{
+    padding: 50px;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------------Reusibility-------------------------- */
+/* ------------------------------------------------------------- */
+
+.row{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.clear-fix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 300%;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+
+h1,h2,h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    margin: 0px 5px;
+    width: 190px;
+    display: inline-block;
+    border-radius: 15px;
+    text-align: center;
+    transition: all .1.5s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d35400;
+}
+
+h2{
+    text-transform: uppercase;
+    color: #e67e22;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: rgba(230, 126, 34,0.6);
+    margin: 0px auto;
+    margin-top: 3px;
+}
+
+h3{
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgb(38, 80, 119);
+    color: white;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------------Sticky and navigation---------------- */
+/* ------------------------------------------------------------- */
+    .sticky{
+        background-color: rgb(2, 33, 64,0.9);
+        position: fixed;
+        z-index: 900;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        padding-bottom: 10px;
+    }
+
+    .sticky .logo{
+        width: 250px;
+        margin-top: -40px;
+        margin-bottom: -70px;
+    }
+    .sticky .main-nav{
+        margin-top: 30px;
+    }
+
+    .sticky .mobile{
+        margin-top: -25px;
+    }
+
+    .mobile{
+        font-size: 200%;
+        color: #6d95bd;
+        position: absolute;
+        top: 55px;
+        right: 100px;
+        display: none;
+    }
+/* ------------------------------------------------------------- */
+/* ---------------------------Header------------------------------ */
+/* ------------------------------------------------------------- */
+header{
+    background-image: linear-gradient(45deg,rgba(2, 33, 64, 0.9)55%, rgba(45, 95, 93, 0.85)), url("../img/background4.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.logo{
+    width: 350px;
+    float: left;
+    margin-left: 70px;
+    margin-top: -50px;
+    margin-bottom: -110px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: rgb(160, 140, 140);
+    font-size: 100%;
+    font-weight: 700;
+    transition: border-bottom 0.5s;
+    padding: 3px 0px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cccfff;
+}
+
+.heading-main-box{
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+}
+/* ------------------------------------------------------------- */
+/* ---------------------------About-Section------------------------- */
+/* ------------------------------------------------------------- */
+
+.p-long{
+    color: rgb(38, 80, 119);
+    font-size: 22px;
+    text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 140%;
+}
+
+.about-picture{
+    position: relative;
+    margin-top: 50px;
+}
+
+.about-picture img{
+    width: 90%;
+    border-radius: 20px;
+    border: 4px solid rgb(197, 221, 247);
+    box-shadow: 0px 5px 15px 5px rgb(2, 33, 64);
+    transition: all .5s;
+}
+
+.p-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(172, 209, 248);
+    transform: translate(-55%, 100%);
+    opacity: 0;
+    transition: all .5s;
+}
+
+.about-picture:hover .p-title,
+.about-picture:active .p-title{
+    transform: translate(-55%, -50%);
+    opacity: 1;
+}
+
+.about-picture:hover img,
+.about-picture:active img{
+    filter: brightness(60%) blur(1px);
+}
+/* ------------------------------------------------------------- */
+/* ---------------------------Product-Section---------------------- */
+/* ------------------------------------------------------------- */
+.product-section{
+    background-color: #f4f4f4;
+}
+
+.product-box{
+    background-color: #eeefff;
+    height: 350px;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    width: 90%;
+    margin-top: 60px;
+}
+
+.product-price{
+    font-size: 250%;
+    color: rgb(38, 80, 119);
+    font-weight: 300;
+    text-align: center;
+}
+
+span{
+    font-size: 80%;
+}
+
+.product-box ul li{
+    list-style: none;
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-box .btn{
+    margin-left: 20%;
+}
+
+.small-icons{
+    color: rgb(45, 129, 219);
+    margin-right: 5px;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------------Testimonials-Section---------------------- */
+/* ------------------------------------------------------------- */
+.testimonials{
+    background-image:linear-gradient(45deg,rgba(2, 33, 64, 0.6)55%, rgba(45, 95, 93, 0.8)), url("../img/51934373_2386076208292358_5740649624226496512_n.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.testimonials h2{
+    margin-bottom: 70px;
+}
+
+blockquote{
+    position: relative;
+    color: white;
+    line-height: 140%;
+    width: 95%;
+    font-style: italic;
+}
+
+blockquote::before{
+    content: "\201C";
+    display: block;
+    position: absolute;
+    font-size: 400%;
+    top: -5%;
+    left: -4%;
+}
+
+cite{
+    display: block;
+    color: rgb(172, 209, 248);
+    margin-top: 25px;
+}
+
+cite img{
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid rgb(172, 209, 248);
+    vertical-align: middle;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------------Sponsor-Section---------------------- */
+/* ------------------------------------------------------------- */
+.sponsor-section{
+    background-color: #f4f4f4;
+}
+
+.sponsor-section h2{
+    margin-bottom: 50px;
+}
+
+.logo-sponsor{
+    width: 140px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.sponsor-showcase{
+    margin-left: 8%;
+}
+.sponsor-showcase li{
+    list-style: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sponsor-showcase li .logo-sponsor:hover,
+.sponsor-showcase li .logo-sponsor:active{
+    transform: scale(1.2);
+}
+
+figcaption{
+    color:rgb(38, 80, 119);
+    font-size: 120%;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------- */
+/* ---------------------------Sponsor-Section---------------------- */
+/* ------------------------------------------------------------- */
+    .contact-section{
+        background-image:linear-gradient(45deg,rgba(2, 33, 64, 0.6)55%, rgba(45, 95, 93, 0.8)), url("../img/background5.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .information{
+        color: white;
+        line-height: 200%;
+        font-size: 90%;
+        list-style: none;
+        margin-top: 70px;
+    }
+
+    .information .small-icons{
+        color: rgb(197, 221, 247);
+        margin-right: 2%;
+    }
+
+    .information li i{
+        transition: all .1s;
+        cursor: pointer;
+    }
+
+    .information li i:hover,
+    .information li i:active{
+        transform: scale(1.2);
+    }
+
+    .social-icon{
+        list-style: none;
+        margin-top: 50px;
+        color: white;
+    }
+
+    .social-icon li{
+        display: inline-block;
+        font-size: 250%;
+        margin-left: 20px;
+    }
+
+    .social-icon li i{
+        transition: all .3s;
+        cursor: pointer;
+    }
+
+    .social-icon li i:hover,
+    .social-icon li i:active{
+       color: #d35400;
+       transform: scale(1.2);
+    }
+
+    form{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 70%;
+        margin-left: 35%;
+        padding: 30px;
+        margin-bottom: 40px;
+    }
+
+    form .row{
+        margin-bottom: 10px;
+    }
+
+    label{
+        color: white;
+        font-size: 140%;
+    }
+
+    input, textarea{
+        padding: 10px;
+        outline: none;
+        background-color: rgba(87, 81, 81, 0.5);
+        border: 2px solid rgba(73, 62, 62, 0.5);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    input{
+        height: 50px;
+    }
+
+    input[type=text],input[type=email],textarea{
+        width: 80%;
+        font-size: 95%;
+    }
+
+    input[type=text]:focus,input[type=email]:focus,textarea:focus{
+        color: rgb(197, 221, 247);
+        background-color: rgba(104, 95, 95, 0.5);
+    }
+
+    textarea{
+        resize: none;
+        height: 100px;
+    }
+    
+    form .row:last-child{
+        text-align: center;
+    }
+
+    form .btn{
+        border-radius: 5px;
+        width: 55%;
+        font-size: 100%;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+/* ------------------------------------------------------------- */
+/* ---------------------------Footer-------------------------- */
+/* ------------------------------------------------------------- */
+footer{
+    text-align: center;
+    background-color: #595959;
+    color: rgb(197, 221, 247);
+    padding: 20px;
+}
